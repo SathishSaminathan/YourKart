@@ -1,0 +1,16 @@
+<div class="container color-dark">
+  <div class="col">
+    <p>Add the Bucket List Item</p>
+  </div>
+  <div class="col">
+    <p>Your Bucket List({{countNumber}})</p>
+  </div>
+</div>
+<div class="container color-light">
+  <div class="col">
+    <p class="sm">Use this form to add bucket list</p>
+      <input type="text" placeholder="Enter" [(ngModel)]="goalText">
+      <input (click)="addItem()" type="submit" value={{btnText}}>
+    <p>{{goalText}}</p>
+  </div>
+</div>
